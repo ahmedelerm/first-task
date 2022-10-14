@@ -1,0 +1,547 @@
+
+* {
+
+   -webkit-box-sizing : border-box ; 
+   -moz-box-sizing : border-box ; 
+    box-sizing : border-box ; 
+
+}
+
+body {
+
+    font-family: "work sans" , sans-serif ;
+    font-size: 1.5vw;
+}
+
+    .container{
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 0;
+
+    } 
+
+@media (min-width : 768px ){
+
+    .container{
+        width: 750px;
+    }
+
+}
+
+@media (min-width : 992px ){
+
+    .container{
+        width: 970px;
+    }
+
+}
+
+@media (min-width : 1200px ){
+
+    .container{
+        width: 1170px;
+    }
+
+}
+
+/*ending global rules */
+
+.header{
+
+    padding: 20px;
+    background-image: url(../images/pexels-photo-5710764.webp);
+    background-size:cover;
+    color: white;
+    height: 500px;
+
+}
+.moh{
+    font-size: 5vw;
+}
+.intro-text{
+    font-size: 1vw;
+}
+.aboutme{
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    background-color: red;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+ .container {
+
+
+    display: flex;
+    justify-content: space-between; 
+        /* distrbute elements horizntal*/
+
+    align-items: center;
+    /* distrb elements virtically  */
+} 
+
+.links ul{
+
+    list-style: none;
+    padding-left: 0px;
+    
+}
+
+ul li {
+    
+    padding : 10px;
+    /* float: left; */
+    display: inline-block;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: white;
+}
+.do-cv{
+    border-radius: 20px;
+    padding: 5px;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    top: 0 ;
+    right: 0;
+
+}
+.landing{
+    position: absolute;
+    top: 200px;
+}
+
+
+
+.aboutme2{
+        padding: 20px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 48% auto 48%;
+        grid-template-rows: auto auto auto ;
+        grid-template-areas: "logo logo logo""skills . persinfo";
+
+}
+
+.aboutme2 h2{
+    grid-area: logo;
+    text-align: center;
+    color:rgb(197, 197, 197);
+}
+.aboutme2 .myskills{
+
+    grid-area: skills;
+
+}
+.aboutme2 .persinfo{
+
+    grid-area: persinfo;
+}
+.persinfo span{
+
+    color: #909004;
+}
+.persinfo p {
+    
+    font-size: 2.5vw;
+    color: #b8033b;
+}
+.myskills p{
+
+    font-size: 2.5vw ;
+    color: #b8033b ;
+}
+
+.one ,
+.two,
+.three  {
+    display: flex;
+    justify-content: space-between;
+}
+.aboutme2 .ht ,
+.aboutme2 .cs ,
+.aboutme2 .js {
+
+    border-radius: 10px;
+    border-color: red;
+    border-style:solid ;
+    height: 5px;
+    
+}
+
+.aboutme2 .ht {
+    width: 95%;
+}
+.aboutme2 .cs {
+    width: 85%;
+}
+.aboutme2 .js {
+    width: 60%;
+}
+    
+.aboutme2 .bo{
+    
+    border-radius: 10px;
+    border-color: rgb(241, 10, 10);
+    border-style: solid;
+}
+.pref{
+
+            padding: 20px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto ;
+            grid-template-areas: "log log log log";
+            gap: 20px 20px;     
+            
+
+}
+
+.pref .child{
+
+   
+    padding: 20px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    box-shadow:  0px 0px 10px 0px #000 ;
+
+}
+
+.child span {
+
+    color: #b8033b;
+    font-weight: bold;
+    font-size: 2vw ;
+}
+
+.parent{
+
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto  ;
+    grid-template-areas: "ser ser ser" "devi des gra""seo digi free""seo digi free" ;
+    gap: 20px 20px;     
+}
+.parent span{
+
+    font-size: 2.5vw ;
+}
+.parent .deve ,
+.parent .des ,
+.parent .gra ,
+.parent .seo ,
+.parent .digi ,
+.parent .free 
+{
+
+    padding: 20px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    box-shadow:  0px 0px 10px 0px #000 ;
+   
+}
+
+.parent .myser{
+    grid-area: ser;
+    grid-column: 2/4;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.parent .deve{
+
+    grid-area: devi ;
+}
+.parent .des{
+
+    grid-area: des ;
+}
+.parent .gra{
+
+    grid-area: gra ;
+}
+.parent .seo{
+
+    grid-area: seo ;
+}
+.parent .digi{
+
+    grid-area: digi ;
+}
+.parent .free{
+
+    grid-area: free ;
+}
+.parent .txt{
+   
+    display: flex;
+    margin-top: 10px;
+
+}
+.parent span{
+    font-size: 30px;
+}
+.read{
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: red;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.parent .deve ,
+.parent .des ,
+.parent .gra ,
+.parent .seo ,
+.parent .digi ,
+.parent .free {
+    background-image:  linear-gradient( 73deg , #cdb6bd 0% , #b8036f7d 50% ,white 47% ) ;
+}
+.parent .deve ,
+.parent .des ,
+.parent .gra ,
+.parent .seo ,
+.parent .digi ,
+.parent .free {
+    position: relative ;
+}
+.parent .num{
+
+    font-size: 3vw;
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    color: #aea0a0c4;
+
+}
+/* i cant do it scalling when i hovor the div */
+.num:hover {
+        transform: scale(2,2);
+      
+}
+
+.fourth {
+
+        padding: 20px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto ;
+       gap: 20px ;   
+
+}
+
+.log1 ,
+.log2{
+    color: #b8033b;
+    font-size: 30px;
+}
+
+.fourth .f-one ,
+.fourth .f-two ,
+.fourth .f-three ,
+.fourth .f-four ,
+.fourth .f-five,
+.fourth .f-six 
+{
+    
+    padding: 20px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    box-shadow:  0px 0px 10px 0px #000 ;
+
+}
+
+.as{
+
+    padding: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.five{
+  
+
+        padding: 20px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto ;
+       gap: 20px ;   
+
+}
+
+.five div{
+
+    padding: 20px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    box-shadow:  0px 0px 10px 0px #000 ;
+}
+
+.five .fione,
+.five .fitwo ,
+.five .fithree ,
+.five .fifour ,
+.five .fifive ,
+.five .fisix ,
+.five .fiseven ,
+.five .fieight ,
+.five .finine {
+
+    width: 100%/3;
+    height: 200px;
+    padding: 20px;
+    background-size:cover;
+
+}
+
+.five .fione{
+
+    
+    background-image: url(../images/project_1.jpg);
+   
+
+}
+.five .fitwo{
+
+   
+    background-image: url(../images/project_2.jpg);
+
+}
+.five .fithree{
+
+    background-image: url(../images/project_3.jpg);
+    
+
+}
+.five .fifour{
+
+    background-image: url(../images/project_4.jpg);
+
+
+}
+.five .fifive{
+    
+    background-image: url(../images/project_5.jpg);
+
+}
+.five .fisix{
+
+  
+    background-image: url(../images/project_6.jpg);
+   
+}
+.five .fiseven{
+
+    background-image: url(../images/project_7.jpg);
+   
+
+}
+.five .fieight{
+
+    background-image: url(../images/project_8.jpg);
+   
+
+}
+.five .finine{
+
+   
+    background-image: url(../images/project_9.jpg);
+    
+}
+.five .fione,
+.five .fitwo ,
+.five .fithree ,
+.five .fifour ,
+.five .fifive ,
+.five .fisix ,
+.five .fiseven ,
+.five .fieight ,
+.five .finine {
+
+    position: relative;
+}
+
+/* important  */
+.proj{
+
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #a13131ab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.five .proj:hover{
+    opacity: 1 ;
+}
+
+
+
+.six{
+
+    padding: 20px;
+   
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto auto auto ;
+        grid-template-areas: "nam";
+}
+.six .left{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.six .right{
+
+   
+   width: 100%;
+   height: 100%;
+    padding: 20px;
+    background-size:cover;
+    background-image: url(../images/contact-img.jpg);
+
+}
+.me {
+
+    font-weight: bolder;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    color: yellowgreen;
+
+}
